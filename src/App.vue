@@ -1,8 +1,9 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld />
+    <hr />
     <CompositionApi />
+    <hr />
     <ComTodoList />
   </div>
 </template>
@@ -10,7 +11,7 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import CompositionApi from "./components/CompositionApi.vue";
-import ComTodoList from "./components/ComTodoList.vue"
+import ComTodoList from "./components/ComTodoList.vue";
 export default {
   name: "App",
   components: {

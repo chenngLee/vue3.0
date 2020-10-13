@@ -1,13 +1,30 @@
 <template>
-  <div>11</div>
-  <p>{{count}}</p>
-  <button @click="myFn">按钮</button>
+  <div>
+    <div>11</div>
+    <p>{{count}}</p>
+    <button @click="myFn">按钮</button>
+    
+    <h2>组合API本质：</h2>
+    <p>{{name}}</p>
+    <button @click="myFn1">按钮</button>
+  </div>
 </template>
 
 <script>
 import { ref } from "vue";
 export default {
   name: "CompositionApi",
+  data() {
+    return {
+      name: "licheng"
+    };
+  },
+  methods: {
+    myFn1() {
+      console.log("myFn1");
+      this.name += "myFn1"
+    }
+  },
   // setup函数是组合API的入口函数
   setup() {
     // let count = 0;
